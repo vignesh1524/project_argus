@@ -11,12 +11,13 @@
 	position: absolute;
 }
 
+
 .form-box{
-	width: 380px;
-	height: 480px;
+	max-width: 380px;
+	height: 60vh;
 	position: relative;
 	margin: 6% auto;
-	background:lightblue;
+	background-color: lightblue;
 	padding: 5px;
 	overflow: hidden;
 }
