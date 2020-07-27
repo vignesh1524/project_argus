@@ -94,3 +94,8 @@
 #register{
 	left: 450px;
 }
+@media (min-width: 0px) and (max-width: 500px){
+	.form-box{
+		transform: scale(1.2);
+	}
+}
