@@ -11,10 +11,9 @@
 	position: absolute;
 }
 
-
 .form-box{
 	max-width: 380px;
-	height: 60vh;
+	height: 480px;
 	position: relative;
 	margin: 6% auto;
 	background-color: lightblue;
@@ -94,9 +93,4 @@
 }
 #register{
 	left: 450px;
-}
-@media (min-width: 0px) and (max-width: 500px){
-	.form-box{
-		transform: scale(1.2);
-	}
 }
