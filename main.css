@@ -35,7 +35,9 @@ body{
 .navbar{
 	padding-bottom: 30px;
 }
-
+.navbar .navbar-brand {
+	font-family: Brush Script MT;
+}
 .navbar-brand img{
 	height: 30px;
 	width: 30px;
@@ -47,7 +49,7 @@ body{
 	transition: 0.5s;
 }
 .nav-item{
-	font-weight: bold;
+	font-weight: lighter;
 	display: inline-block;
 	padding: 4px 14px;
 	color: white;
@@ -103,38 +105,65 @@ body{
 }
 
 
-/*----------------------- hero section -------------------------*/
 #hero{
-	width: 100%;
+	background: rgba(0,0,100,0.7);
 	height:100vh;
-	background: url("s1.jpg") center;
-	background-size:cover;
-}
-#hero .container{
-	padding-top: 80px;
-}
-#hero:before{
-	content: "";
-	background: rgba(0,0,0,0.6);
-	position: absolute;
-	bottom: 0;
-	top: 0;
-	left:0;
-	right: 0;
-	height: 100vh;
+	
 }
 
-#hero h1{
-	margin: 0 0 10px 0;
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 56px;
+.video-background{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+	.video-background{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:16/9){
+	.video-background{
+		width: auto;
+		height: 100%;
+	}
+}
+.wc{
+	position: relative;
+	text-align: center;
+	font-family: monospace;
+	color: #fff;
+	top: 150px;
+}
+/*------------------------- footer ----------------------------*/
+.page-footer{
+	padding-top: 10px;
+}
+.page-footer h6{
 	color: #fff;
 }
-#hero h2{
-	color: #fff;
-	/*margin-bottom: 40px;*/
-	font-size: 15px;
-	font-weight: bold;
-	letter-spacing: 0.5px;
+.page-footer .footer-icons i:hover{
+	transform: scale(1.4);
 }
+.page-footer ul li a{
+	text-decoration: none;
+	color: #888888;
+}
+.page-footer ul li a:hover{
+	color: #ffffff;
+}
+.page-footer p{
+	color: #888888;
+}
+.page-footer p a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 500;
+}
+/*--------------------- end of footer -------------------------*/
